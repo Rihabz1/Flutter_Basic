@@ -90,4 +90,15 @@ Use git merge to combine branches or changes you already have locally
 Switch to the branch you want to merge into
 
 1. git switch main
-2. git merge branch_name
+2. git merge origin branch_name
+
+
+)) delete branch
+1. git branch -d test
+
+//it will delete the test branch only on your local machine, not on GitHub.
+
+2. git push origin --delete test
+
+//deletes remote (GitHub) branch
+
