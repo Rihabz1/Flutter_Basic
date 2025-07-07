@@ -102,3 +102,7 @@ Switch to the branch you want to merge into
 
 //deletes remote (GitHub) branch
 
+)) rollback to previous any commit 
+To rollback to a previous commit in Git, you have a few options depending on what you want:
+
+1. git revert <commit_hash>
