@@ -1,0 +1,93 @@
+
+1. git init // 
+
+initializes a new, empty Git repository in your current folder.
+It creates a hidden .git directory
+
+2. git add .  
+
+// Add all new and changed files in the current folder (and its subfolders) to the Git staging area.
+The . means "current directory and everything inside it."
+
+3. git commit -m "commit1"
+
+//Saves a snapshot of all staged changes (files you added with git add) in the Git history.
+Each commit records only what changed since the last commit, not a full copy of everything.
+
+4. git branch -M main
+
+//git branch -M main is needed to rename your current branch to main.
+By default, Git used to name the first branch master.
+Many teams and platforms (like GitHub) now use main as the default branch name for new repositories.
+
+5. git remote add origin https://github.com/Rihabz1/to_do_app.git
+
+//a copy of your project on GitHub and name it origin.
+The URL (https://github.com/Rihabz1/to_do_app.git) tells Git where your remote repository is located.
+Now you can push your local code to GitHub using this remote.
+
+6. git push -u origin main
+
+//It uploads your code to GitHub and links your local branch to the remote branch.
+, so next time you can just use git push or git pull without specifying the branch.
+
+
+***
+The next time you change your code and want to save it to GitHub, just run these commands in your terminal:
+***
+
+git add .
+git commit -m "your message"
+git push
+
+
+
+***>> git status
+//Tells you which files are changed, staged, or untracked.
+
+***>> git add .
+Add all new and changed files
+
+**** git branching ***
+Git branching is a way to create separate lines of development in your project.
+Branches let you work on new features, bug fixes, or experiments without affecting the main code.
+
+Create a new branch:
+1. git branch branch_name
+
+Switch to a branch:
+2. git switch branch_name
+
+then if want to push
+git add .
+git commit -m "commit"
+git push origin branch_name
+
+List all branches:
+3.git branch
+
+
+
+*******************************************
+1. git fetch 
+
+git fetch gets the latest changes from the remote, 
+but does not apply them to your code until you merge or pull.
+
+1. git pull
+
+git pull downloads the latest changes from the remote repository
+and automatically merges them into your current branch.
+
+git pull = git fetch + git merge
+
+Use git pull to get and merge remote changes in one step.
+Use git merge to combine branches or changes you already have locally
+
+****)To merge two branches in Git:))
+
+
+Switch to the branch you want to merge into
+
+1. git switch main
+2. git merge branch_name
