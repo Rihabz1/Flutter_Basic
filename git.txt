@@ -106,3 +106,18 @@ Switch to the branch you want to merge into
 To rollback to a previous commit in Git, you have a few options depending on what you want:
 
 1. git revert <commit_hash>
+
+*** to show all remote branch ***
+git branch -r
+
+
+This will fetch and merge the remote changes into your local branch
+
+1.   git pull origin main --allow-unrelated-histories
+
+To show the git remote origin, you can use several git commands. Let me run them for you:
+git remote -v
+
+Remove all remotes:
+git remote remove origin
+
